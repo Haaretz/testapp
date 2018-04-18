@@ -1,6 +1,6 @@
 {
   "name": "nodetst",
-  "version": "0.0.0-development",
+  "version": "1.0.0-semantic-release-test",
   "description": "Just another test application",
   "main": "index.js",
   "scripts": {
