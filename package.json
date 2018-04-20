@@ -1,11 +1,10 @@
 {
   "name": "nodetst",
-  "version": "0.0.0-development",
+  "version": "1.0.0-semantic-release-test",
   "description": "Just another test application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\"",
-    "semantic-release": "semantic-release"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
@@ -17,16 +16,6 @@
     "c"
   ],
   "author": "Maoz Testing Inc",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/maozza/testapp/issues"
-  },
-  "homepage": "https://github.com/maozza/testapp#readme",
-  "devDependencies": {
-    "semantic-release": "^15.1.7",
-    "travis-deploy-once": "^4.4.1"
-  },
-  "dependencies": {
-    "cover": "^0.2.9"
-  }
+  "license": "GPL-3.0"
 }
+
