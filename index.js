@@ -1,6 +1,6 @@
 // content of index.js
 const http = require('http')
-const port = 3122
+const port = 3112
 
 const requestHandler = (request, response) => {
   console.log(request.url)
