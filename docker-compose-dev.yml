@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  testapp-dev:
+    image: docker.themarker.com:8083/testapp:${version:-latest}
+    build: .
+    hostname: testapp
+    networks:
+      - development
+    environment:
+      - SOME_ENV=test
+    ports:
+      - "3112:3112"
+networks:
+  development:
+    external: true
