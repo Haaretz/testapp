@@ -2,7 +2,8 @@ version: "3.3"
 
 services:
   testapp-dev:
-    image: docker.themarker.com:8083/testapp:${version:-latest}
+    #image: docker.themarker.com:8083/testapp:${version:-latest}
+    image: maozzadok/testapp:${version:-latest}
     build: .
     hostname: testapp
     networks:
@@ -11,6 +12,11 @@ services:
       - SOME_ENV=test
     ports:
       - "3112:3112"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3112"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
 networks:
   development:
     external: true
