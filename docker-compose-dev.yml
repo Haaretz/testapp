@@ -14,8 +14,8 @@ services:
       - "3112:3112"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3112"]
-      interval: 1m30s
-      timeout: 10s
+      interval: 10s
+      timeout: 5s
       retries: 3
 networks:
   development:
