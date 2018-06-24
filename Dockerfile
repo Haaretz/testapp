@@ -4,7 +4,8 @@ WORKDIR /workspace/
 
 EXPOSE 3112
 WORKDIR /workspace/
-#RUN "yarn"
+
+RUN "npm install"
 
 CMD ["node", "index.js"]
 

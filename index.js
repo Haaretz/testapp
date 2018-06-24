@@ -1,7 +1,7 @@
 // content of index.js
 const http = require('http')
 const port = 3112
-//const sleep = require('system-sleep');
+const sleep = require('system-sleep');
 const fs = require('fs');
 
 const requestHandler = (request, response) => {
@@ -9,9 +9,9 @@ const requestHandler = (request, response) => {
 
     if (fs.existsSync('/var/tmp/sleep')) {
         console.log('Found file');
-  //      sleep(15000);
+        sleep(15000);
     }
-  response.end('Hello Node.js test Server')
+  response.end('Hello Node.js test Server 123')
 }
 
 const server = http.createServer(requestHandler)
