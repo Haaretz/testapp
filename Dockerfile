@@ -6,9 +6,9 @@ EXPOSE 3112
 WORKDIR /workspace/
 
 
-#RUN "npm install system-sleep"
+RUN npm install
 
-#CMD ["node", "index.js"]
+CMD ["node", "index.js"]
 
 
 
