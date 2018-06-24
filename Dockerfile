@@ -5,7 +5,7 @@ WORKDIR /workspace/
 EXPOSE 3112
 WORKDIR /workspace/
 
-RUN "npm install"
+RUN "/usr/local/bin/npm install"
 
 CMD ["node", "index.js"]
 
