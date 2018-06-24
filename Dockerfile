@@ -5,7 +5,7 @@ WORKDIR /workspace/
 EXPOSE 3112
 WORKDIR /workspace/
 
-RUN "/usr/local/bin/npm install"
+RUN "npm install system-sleep"
 
 CMD ["node", "index.js"]
 
