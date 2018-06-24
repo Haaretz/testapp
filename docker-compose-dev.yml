@@ -2,8 +2,8 @@ version: "3.3"
 
 services:
   testapp-dev:
-    #image: docker.themarker.com:8083/testapp:${version:-latest}
-    image: maozzadok/testapp:${version:-latest}
+    image: docker.themarker.com:8083/testapp:${version:-latest}
+    #image: maozzadok/testapp:${version:-latest}
     build: .
     hostname: testapp
     networks:
