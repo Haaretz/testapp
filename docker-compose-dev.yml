@@ -8,7 +8,7 @@ services:
     networks:
       - development
     environment:
-      - SOME_ENV=test
+      - version=${version:-latest}
     ports:
       - "3112:3112"
     healthcheck:
