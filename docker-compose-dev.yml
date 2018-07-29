@@ -5,7 +5,6 @@ services:
     image: docker.themarker.com:8083/testapp:${version:-latest}
     #image: maozzadok/testapp:${version:-latest}
     build: .
-    hostname: testapp
     networks:
       - development
     environment:
@@ -22,8 +21,9 @@ services:
           update_config:
             parallelism: 2
             delay: 10s
+            order: start-first
           restart_policy:
-            condition: on-failure 
+            condition: on-failure
 networks:
   development:
     external: true
