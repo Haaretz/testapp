@@ -19,9 +19,9 @@ services:
     deploy:
           replicas: 5
           update_config:
-            #parallelism: 2
+            parallelism: 3
             delay: 10s
-            order: start-first
+            order: stop-first
           restart_policy:
             condition: on-failure
 networks:
