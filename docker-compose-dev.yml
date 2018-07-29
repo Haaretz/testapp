@@ -21,7 +21,7 @@ services:
           update_config:
             parallelism: 3
             delay: 20s
-            order: stop-first
+            order: start-first
           restart_policy:
             condition: on-failure
 networks:
