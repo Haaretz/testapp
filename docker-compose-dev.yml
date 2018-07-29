@@ -19,8 +19,8 @@ services:
     deploy:
           replicas: 5
           update_config:
-            parallelism: 3
-            delay: 10s
+            parallelism: 5
+            delay: 3s
             order: stop-first
           restart_policy:
             condition: on-failure
