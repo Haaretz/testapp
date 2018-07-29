@@ -13,14 +13,14 @@ services:
       - "3112:3112"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3112"]
-      interval: 10s
+      interval: 30s
       timeout: 5s
       retries: 3
     deploy:
-          replicas: 5
+          replicas: 3
           update_config:
-            parallelism: 5
-            delay: 3s
+            parallelism: 3
+            #delay: 10s
             order: stop-first
           restart_policy:
             condition: on-failure
