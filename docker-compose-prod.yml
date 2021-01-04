@@ -25,5 +25,5 @@ services:
           restart_policy:
             condition: on-failure
 networks:
-  development:
+  prod02:
     external: true
