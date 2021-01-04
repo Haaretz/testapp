@@ -6,7 +6,7 @@ services:
     #image: maozzadok/testapp:${version:-latest}
     build: .
     networks:
-      - development
+      - prod02
     environment:
       - version=${version:-latest}
     ports:
