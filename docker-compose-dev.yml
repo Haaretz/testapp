@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   testapp-dev:
-    image: docker.themarker.com:8083/testapp:${version:-latest}
+    image: nexus-ng.themarker.com/testapp:${version:-latest}
     #image: maozzadok/testapp:${version:-latest}
     build: .
     networks:
